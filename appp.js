@@ -67,6 +67,9 @@
 //         console.log("I don't know that");
 // }
 
-for (let i = 1; i <= 10; i++) {
+for (let i = 100; i = 0; i -= 10) {
+    console.log(i)
+}
+for (let i = 10; i <= 1110; i *= 10) {
     console.log(i)
 }

@@ -74,9 +74,23 @@
 //     console.log(i)
 // }
 
-for (let i = 1; i <= 10; i++ ) {
-    console.log(`i is: ${i}`)
-    for (let j = 1; j <=3; j++) {
-        console.log(`   j is: ${j}`)
+// for (let i = 1; i <= 10; i++ ) {
+//     console.log(`i is: ${i}`)
+//     for (let j = 1; j <=3; j++) {
+//         console.log(`   j is: ${j}`)
+//     }
+// }
+
+const table = [
+    ["eric", "abbloo", "stan"],
+    ["sifty", "laloo", "erica"],
+    ["snoop", "dre", "emi"]
+]
+
+for (let i = 0; i < table.length; i++) {
+    const row = table[i]
+    console.log(`#ROW ${i + 1}`)
+    for (let j = 0; j < row.length; j++) {
+        console.log(row[j])
     }
 }

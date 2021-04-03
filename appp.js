@@ -101,10 +101,24 @@
 //     console.log(count)
 // }
 
-const SECRET = "BabyHippo";
+// const SECRET = "BabyHippo";
 
-let guess = prompt("Enter the secret code");
-while (guess !== SECRET) {
-    guess = prompt("Enter the secret code")
+// let guess = prompt("Enter the secret code");
+// while (guess !== SECRET) {
+//     guess = prompt("Enter the secret code")
+// }
+// console.log("Congrats You got the secret")  
+
+let input = prompt("Hey, say something!");
+while (true) {
+    input = prompt(input);
+    if (input.toLowerCase() === "stop copying me") {
+        break;
+    }
 }
-console.log("Congrats You got the secret")
+console.log("Ok you win")
+
+for (let i = 0; i < 1000; i++) {
+    console.log(i);
+    if (i === 100) break;
+}

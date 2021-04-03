@@ -109,16 +109,48 @@
 // }
 // console.log("Congrats You got the secret")  
 
-let input = prompt("Hey, say something!");
-while (true) {
-    input = prompt(input);
-    if (input.toLowerCase() === "stop copying me") {
-        break;
+// let input = prompt("Hey, say something!");
+// while (true) {
+//     input = prompt(input);
+//     if (input.toLowerCase() === "stop copying me") {
+//         break;
+//     }
+// }
+// console.log("Ok you win")
+
+// for (let i = 0; i < 1000; i++) {
+//     console.log(i);
+//     if (i === 100) break;
+// }
+
+                    // Generating a random number by taking input
+
+let maximum = parseInt(prompt("Enter the maximum number!")); 
+while (!maximum) {
+    maximum = parseInt(prompt("Enter a valid number!")); 
+}
+
+const targetNum = Math.floor(Math.random() * maximum) + 1;
+console.log(targetNum);
+
+                    // taking guess
+
+let guess = parseInt(prompt("Enter your first guess"));
+let attempts = 1;
+
+while (parseInt(guess) !== targetNum) {
+    if (guess === 'q') break;
+    attempts++;
+    if (guess > targetNum) {
+        guess = prompt("Too high! Enter a new guess");
+    } else {
+        guess = prompt("Too low! Enter a new guess")
     }
 }
-console.log("Ok you win")
+if (guess === "q") {
+    console.log("OK, You Quit")
+} else {
+    console.log("Congrats You Win")
+    console.log(`You got it in ${attempts} guesses.`)
+} 
 
-for (let i = 0; i < 1000; i++) {
-    console.log(i);
-    if (i === 100) break;
-}

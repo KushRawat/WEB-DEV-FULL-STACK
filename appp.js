@@ -81,16 +81,22 @@
 //     }
 // }
 
-const table = [
-    ["eric", "abbloo", "stan"],
-    ["sifty", "laloo", "erica"],
-    ["snoop", "dre", "emi"]
-]
+// const table = [
+//     ["eric", "abbloo", "stan"],
+//     ["sifty", "laloo", "erica"],
+//     ["snoop", "dre", "emi"]
+// ]
 
-for (let i = 0; i < table.length; i++) {
-    const row = table[i]
-    console.log(`#ROW ${i + 1}`)
-    for (let j = 0; j < row.length; j++) {
-        console.log(row[j])
-    }
+// for (let i = 0; i < table.length; i++) {
+//     const row = table[i]
+//     console.log(`#ROW ${i + 1}`)
+//     for (let j = 0; j < row.length; j++) {
+//         console.log(row[j])
+//     }
+// }
+
+let count = 0;
+while (count <10) {
+    count++;
+    console.log(count)
 }

@@ -125,32 +125,47 @@
 
                     // Generating a random number by taking input
 
-let maximum = parseInt(prompt("Enter the maximum number!")); 
-while (!maximum) {
-    maximum = parseInt(prompt("Enter a valid number!")); 
-}
+// let maximum = parseInt(prompt("Enter the maximum number!")); 
+// while (!maximum) {
+//     maximum = parseInt(prompt("Enter a valid number!")); 
+// }
 
-const targetNum = Math.floor(Math.random() * maximum) + 1;
-console.log(targetNum);
+// const targetNum = Math.floor(Math.random() * maximum) + 1;
+// console.log(targetNum);
 
-                    // taking guess
+//                     // taking guess
 
-let guess = parseInt(prompt("Enter your first guess"));
-let attempts = 1;
+// let guess = parseInt(prompt("Enter your first guess"));
+// let attempts = 1;
 
-while (parseInt(guess) !== targetNum) {
-    if (guess === 'q') break;
-    attempts++;
-    if (guess > targetNum) {
-        guess = prompt("Too high! Enter a new guess");
-    } else {
-        guess = prompt("Too low! Enter a new guess")
+// while (parseInt(guess) !== targetNum) {
+//     if (guess === 'q') break;
+//     attempts++;
+//     if (guess > targetNum) {
+//         guess = prompt("Too high! Enter a new guess");
+//     } else {
+//         guess = prompt("Too low! Enter a new guess")
+//     }
+// }
+// if (guess === "q") {
+//     console.log("OK, You Quit")
+// } else {
+//     console.log("Congrats You Win")
+//     console.log(`You got it in ${attempts} guesses.`)
+// } 
+
+const table = [
+    ["eric", "abbloo", "stan"],
+    ["sifty", "laloo", "erica"],
+    ["snoop", "dre", "emi"]
+]
+
+for (let row of table) {
+    for (let student of row) {
+        console.log(student)
     }
 }
-if (guess === "q") {
-    console.log("OK, You Quit")
-} else {
-    console.log("Congrats You Win")
-    console.log(`You got it in ${attempts} guesses.`)
-} 
 
+for (let char of "Hello World") {
+    console.log(char)
+}

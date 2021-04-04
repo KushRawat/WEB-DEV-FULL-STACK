@@ -170,22 +170,33 @@
 //     console.log(char)
 // }
 
- let table = {
-     yolo : 12,
-     bolo : 234,
-     golo : 234,
- }
+//  let table = {
+//      yolo : 12,
+//      bolo : 234,
+//      golo : 234,
+//  }
 
- for (let person in table) {
-     console.log(person, table[person])
- }
+//  for (let person in table) {
+//      console.log(person, table[person])
+//  }
 
 
- let total = 0;
- let count = 0;
- for (let score of Object.values(table)) {
-    count++
-    total += score;
+//  let total = 0;
+//  let count = 0;
+//  for (let score of Object.values(table)) {
+//     count++
+//     total += score;
+// }
+// console.log(total)
+// console.log(count)
+
+function singSong() {
+    console.log("DO")
+    console.log("RE")
+    console.log("MI")
 }
-console.log(total)
-console.log(count)
+
+function greet(firstName, lastName) {
+    console.log(`Hey there, ${firstName} ${lastName[0]}!`)
+}
+

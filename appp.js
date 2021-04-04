@@ -190,13 +190,21 @@
 // console.log(total)
 // console.log(count)
 
-function singSong() {
-    console.log("DO")
-    console.log("RE")
-    console.log("MI")
-}
+// function singSong() {
+//     console.log("DO")
+//     console.log("RE")
+//     console.log("MI")
+// }
 
-function greet(firstName, lastName) {
-    console.log(`Hey there, ${firstName} ${lastName[0]}!`)
-}
+// function greet(firstName, lastName) {
+//     console.log(`Hey there, ${firstName} ${lastName[0]}!`)
+// }
 
+let bird = "parrot"
+
+function birdWatch() {
+     bird = "green parrot"
+}
+ 
+birdWatch()
+console.log(bird)

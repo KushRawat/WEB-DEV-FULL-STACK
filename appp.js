@@ -154,18 +154,38 @@
 //     console.log(`You got it in ${attempts} guesses.`)
 // } 
 
-const table = [
-    ["eric", "abbloo", "stan"],
-    ["sifty", "laloo", "erica"],
-    ["snoop", "dre", "emi"]
-]
+// const table = [
+//     ["eric", "abbloo", "stan"],
+//     ["sifty", "laloo", "erica"],
+//     ["snoop", "dre", "emi"]
+// ]
 
-for (let row of table) {
-    for (let student of row) {
-        console.log(student)
-    }
-}
+// for (let row of table) {
+//     for (let student of row) {
+//         console.log(student)
+//     }
+// }
 
-for (let char of "Hello World") {
-    console.log(char)
+// for (let char of "Hello World") {
+//     console.log(char)
+// }
+
+ let table = {
+     yolo : 12,
+     bolo : 234,
+     golo : 234,
+ }
+
+ for (let person in table) {
+     console.log(person, table[person])
+ }
+
+
+ let total = 0;
+ let count = 0;
+ for (let score of Object.values(table)) {
+    count++
+    total += score;
 }
+console.log(total)
+console.log(count)

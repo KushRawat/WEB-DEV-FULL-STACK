@@ -200,11 +200,15 @@
 //     console.log(`Hey there, ${firstName} ${lastName[0]}!`)
 // }
 
-let bird = "parrot"
+// let bird = "parrot"
 
-function birdWatch() {
-     bird = "green parrot"
-}
+// function birdWatch() {
+//      bird = "green parrot"
+// }
  
-birdWatch()
-console.log(bird)
+// birdWatch()
+// console.log(bird)
+
+const add = function(x,y) {
+     return x + y
+}

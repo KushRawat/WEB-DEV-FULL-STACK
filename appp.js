@@ -209,6 +209,14 @@
 // birdWatch()
 // console.log(bird)
 
-const add = function(x,y) {
-     return x + y
+// const add = function(x,y) {
+//      return x + y
+// }
+
+function multiply(f) {
+     f()
+}
+
+function number() {
+     console.log("ayyy")
 }

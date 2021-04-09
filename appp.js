@@ -246,22 +246,34 @@
 //      }
 // }
 
-const myMath = {
-     PI: 3.14,
-     square: function (num) {
-          return num * num;
-     },
-     cube: function(num) {
-          return num ** 3;
-     },
-}
-               // short syntax
-const myyMath = {
-     PI:3.14,
-     square (num) {
-          return num ** 2;
-     },
-     cube (num) {
-          return num ** 3;
+// const myMath = {
+//      PI: 3.14,
+//      square: function (num) {
+//           return num * num;
+//      },
+//      cube: function(num) {
+//           return num ** 3;
+//      },
+// }
+//                // short syntax
+// const myyMath = {
+//      PI:3.14,
+//      square (num) {
+//           return num ** 2;
+//      },
+//      cube (num) {
+//           return num ** 3;
+//      }
+// }
+
+const cat = {
+     breed: "Kuch Bhi",
+     colour:"Black",
+     name: "Garfield",
+     meow() {
+          console.log("This is:", this)
+          console.log(`${this.name} says MEOWWWW`)
      }
 }
+
+const meow2 = cat.meow;

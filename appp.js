@@ -221,28 +221,47 @@
 //      console.log("ayyy")
 // }
 
-function makeMysteryFunc() {
-     const rand = Math.random()
-     if (rand > 0.5) {
-          return function() {
-               console.log("Ayo")
-               console.log("Ayo!!")
-          }
-     } else {
-          return function() {
-               alert("Whoaa!!")
-               alert("Whoaa!!!!")
-          }
+// function makeMysteryFunc() {
+//      const rand = Math.random()
+//      if (rand > 0.5) {
+//           return function() {
+//                console.log("Ayo")
+//                console.log("Ayo!!")
+//           }
+//      } else {
+//           return function() {
+//                alert("Whoaa!!")
+//                alert("Whoaa!!!!")
+//           }
+//      }
+// }
+
+// function isBetween(num) {
+//      return num >= 50 && num <= 100
+// }
+
+// function makeBetweenFunc(min, max) {
+//      return function(num) {
+//           return num >= min && num <= max;
+//      }
+// }
+
+const myMath = {
+     PI: 3.14,
+     square: function (num) {
+          return num * num;
+     },
+     cube: function(num) {
+          return num ** 3;
+     },
+}
+               // short syntax
+const myyMath = {
+     PI:3.14,
+     square (num) {
+          return num ** 2;
+     },
+     cube (num) {
+          return num ** 3;
      }
 }
-
-function isBetween(num) {
-     return num >= 50 && num <= 100
-}
-
-function makeBetweenFunc(min, max) {
-     return function(num) {
-          return num >= min && num <= max;
-     }
-}
-

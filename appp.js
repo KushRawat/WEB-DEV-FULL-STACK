@@ -213,10 +213,36 @@
 //      return x + y
 // }
 
-function multiply(f) {
-     f()
+// function multiply(f) {
+//      f()
+// }
+
+// function number() {
+//      console.log("ayyy")
+// }
+
+function makeMysteryFunc() {
+     const rand = Math.random()
+     if (rand > 0.5) {
+          return function() {
+               console.log("Ayo")
+               console.log("Ayo!!")
+          }
+     } else {
+          return function() {
+               alert("Whoaa!!")
+               alert("Whoaa!!!!")
+          }
+     }
 }
 
-function number() {
-     console.log("ayyy")
+function isBetween(num) {
+     return num >= 50 && num <= 100
 }
+
+function makeBetweenFunc(min, max) {
+     return function(num) {
+          return num >= min && num <= max;
+     }
+}
+

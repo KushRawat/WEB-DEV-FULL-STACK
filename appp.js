@@ -344,18 +344,20 @@
 //     return movie.title
 // })
 
-function add(x,y) {
-    return x + y; 
-}
+// function add(x,y) {
+//     return x + y; 
+// }
 
-const addd = function(x,y) {
-    return x + y;
-}
+// const addd = function(x,y) {
+//     return x + y;
+// }
 
-const adddd = (x,y) => {
-    return x + y;
-}
+// const adddd = (x,y) => {
+//     return x + y;
+// }
 
-const square = (x) => {
-    return x**2;
-}
+// const square = (x) => {
+//     return x**2;
+// }
+
+const rollDie = () => Math.floor(Math.random() * 6) + 1

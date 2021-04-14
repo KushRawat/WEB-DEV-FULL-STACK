@@ -362,8 +362,13 @@
 
 // const rollDie = () => Math.floor(Math.random() * 6) + 1
 
-console.log("HELLO!!!")
-setTimeout(() => {
-    console.log("....are you still there??")
-}, 3000)  
-console.log("GOODBYE!!!")
+// console.log("HELLO!!!")
+// setTimeout(() => {
+//     console.log("....are you still there??")
+// }, 3000)  
+// console.log("GOODBYE!!!")
+
+
+const id = setInterval(() => {
+    console.log(Math.random())
+}, 2000)  

@@ -323,23 +323,39 @@
 //   console.log(`${movie.title} - ${movie.score}/100`)  
 // })
 
-const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+// const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 
-const doubles = numbers.map(function(num) {
-    return num * 2
-})
+// const doubles = numbers.map(function(num) {
+//     return num * 2
+// })
 
-const movies = [
-    {
-        title:'Amadeus',
-        score: 99
-    },
-    {
-        title:'Parasite',
-        score: 85
-    }
-]
+// const movies = [
+//     {
+//         title:'Amadeus',
+//         score: 99
+//     },
+//     {
+//         title:'Parasite',
+//         score: 85
+//     }
+// ]
 
-const title = movies.map(function(movie) {
-    return movie.title
-})
+// const title = movies.map(function(movie) {
+//     return movie.title
+// })
+
+function add(x,y) {
+    return x + y; 
+}
+
+const addd = function(x,y) {
+    return x + y;
+}
+
+const adddd = (x,y) => {
+    return x + y;
+}
+
+const square = (x) => {
+    return x**2;
+}

@@ -360,4 +360,10 @@
 //     return x**2;
 // }
 
-const rollDie = () => Math.floor(Math.random() * 6) + 1
+// const rollDie = () => Math.floor(Math.random() * 6) + 1
+
+console.log("HELLO!!!")
+setTimeout(() => {
+    console.log("....are you still there??")
+}, 3000)  
+console.log("GOODBYE!!!")

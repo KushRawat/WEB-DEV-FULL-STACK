@@ -266,14 +266,30 @@
 //      }
 // }
 
-const cat = {
-     breed: "Kuch Bhi",
-     colour:"Black",
-     name: "Garfield",
-     meow() {
-          console.log("This is:", this)
-          console.log(`${this.name} says MEOWWWW`)
-     }
+// const cat = {
+//      breed: "Kuch Bhi",
+//      colour:"Black",
+//      name: "Garfield",
+//      meow() {
+//           console.log("This is:", this)
+//           console.log(`${this.name} says MEOWWWW`)
+//      }
+// }
+
+// const meow2 = cat.meow;
+
+ 
+
+try {
+    hello.toUpperCase();
+} catch {
+    console.log("It still runss!")
 }
 
-const meow2 = cat.meow;
+function check(msg) {
+    try {
+        console.log(msg.toUpperCase().repeat(3));
+    } catch {
+        console.log("Please try a string")
+    }
+}

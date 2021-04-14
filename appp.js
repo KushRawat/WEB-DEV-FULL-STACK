@@ -294,18 +294,39 @@
 //     }
 // }
 
+// const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+// for (let ele of numbers) {
+//     if(ele % 2 === 0) {
+//         console.log(ele)
+//     }
+// }
+
+// numbers.forEach(function (ele) {
+//     if (ele % 2 === 0) {
+//         console.log(ele)
+//     }
+// })
+
+// const movies = [
+//     {
+//         title:'Amadeus',
+//         score: 99
+//     },
+//     {
+//         title:'Parasite',
+//         score: 85
+//     }
+// ]
+
+// movies.forEach(function(movie){
+//   console.log(`${movie.title} - ${movie.score}/100`)  
+// })
+
 const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 
-for (let ele of numbers) {
-    if(ele % 2 === 0) {
-        console.log(ele)
-    }
-}
-
-numbers.forEach(function (ele) {
-    if (ele % 2 === 0) {
-        console.log(ele)
-    }
+const doubles = numbers.map(function(num) {
+    return num * 2
 })
 
 const movies = [
@@ -319,6 +340,6 @@ const movies = [
     }
 ]
 
-movies.forEach(function(movie){
-  console.log(`${movie.title} - ${movie.score}/100`)  
+const title = movies.map(function(movie) {
+    return movie.title
 })

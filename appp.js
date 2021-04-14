@@ -280,16 +280,45 @@
 
  
 
-try {
-    hello.toUpperCase();
-} catch {
-    console.log("It still runss!")
-}
+// try {
+//     hello.toUpperCase();
+// } catch {
+//     console.log("It still runss!")
+// }
 
-function check(msg) {
-    try {
-        console.log(msg.toUpperCase().repeat(3));
-    } catch {
-        console.log("Please try a string")
+// function check(msg) {
+//     try {
+//         console.log(msg.toUpperCase().repeat(3));
+//     } catch {
+//         console.log("Please try a string")
+//     }
+// }
+
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+
+for (let ele of numbers) {
+    if(ele % 2 === 0) {
+        console.log(ele)
     }
 }
+
+numbers.forEach(function (ele) {
+    if (ele % 2 === 0) {
+        console.log(ele)
+    }
+})
+
+const movies = [
+    {
+        title:'Amadeus',
+        score: 99
+    },
+    {
+        title:'Parasite',
+        score: 85
+    }
+]
+
+movies.forEach(function(movie){
+  console.log(`${movie.title} - ${movie.score}/100`)  
+})

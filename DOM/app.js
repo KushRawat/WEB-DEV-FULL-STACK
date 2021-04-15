@@ -4,8 +4,14 @@
 //     console.log(img.src)
 // }
 
-const squareImages = document.getElementsByClassName('square') 
+// const squareImages = document.getElementsByClassName('square') 
 
-for (let img of squareImages) {
-    img.src = '';
+// for (let img of squareImages) {
+//     img.src = '';
+// }
+
+const links = document.querySelectorAll('p a')
+
+for (let link of links) {
+    console.log(link.href)
 }

@@ -389,13 +389,16 @@
 //     return min
 // })
 
-function rollDieOld(numSides) {
-    if (numSides === undefined) {
-        numSides = 6
-    }
-    return Math.floor(Math.random() * numSides) + 1
-}
+// function rollDieOld(numSides) {
+//     if (numSides === undefined) {
+//         numSides = 6
+//     }
+//     return Math.floor(Math.random() * numSides) + 1
+// }
 
-function rollDie(numSides = 6) {
-    return Math.floor(Math.random() * numSides) + 1
-}
+// function rollDie(numSides = 6) {
+//     return Math.floor(Math.random() * numSides) + 1
+// }
+
+console.log("Hello")
+console.log(..."Hello")

@@ -415,6 +415,16 @@
 
 //  const newObj = {...obj, new: "sdaf"}
 
-function sum() {
-    console.log(arguments)
+// function sum() {
+//     console.log(arguments)
+// }
+
+function sum(...nums) {
+    return nums.reduce((total, el) => total + el);
+}
+
+function raceResults(gold, silver, ...everyoneElse) {
+    console.log(`Gold goes to ${gold}`)
+    console.log(`Silver goes to ${silver}`)
+    console.log(`And thanks to everyone else ${everyoneElse}`)
 }

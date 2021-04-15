@@ -15,3 +15,9 @@ const links = document.querySelectorAll('p a')
 for (let link of links) {
     console.log(link.href)
 }
+
+const links = document.querySelectorAll('a')
+
+for (let link of links) {
+    console.log(link)
+}

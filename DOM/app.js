@@ -1,5 +1,11 @@
-const allImages = document.getElementsByTagName('img')
+// const allImages = document.getElementsByTagName('img')
 
-for(let img of allImages) {
-    console.log(img.src)
+// for(let img of allImages) {
+//     console.log(img.src)
+// }
+
+const squareImages = document.getElementsByClassName('square') 
+
+for (let img of squareImages) {
+    img.src = '';
 }

@@ -429,6 +429,30 @@
 //     console.log(`And thanks to everyone else ${everyoneElse}`)
 // }
 
-const raceResults = ['Love', 'Kush', 'Aman', 'Deepak'];
+// const raceResults = ['Love', 'Kush', 'Aman', 'Deepak'];
 
-const [gold, silver, ...everyoneElse] = raceResults;
+// const [gold, silver, ...everyoneElse] = raceResults;
+
+const movies = [
+    {
+        title:'Amadeus',
+        score: 99
+    },
+    {
+        title:'Parasite',
+        score: 85
+    }
+]
+
+const [one,two] = movies;
+
+const moviess = {
+        title:'Amadeus',
+        score: 99,
+        name:'Kush'
+    }   
+
+const {score,name,title}= moviess;
+
+const {title:oneTitle, score:twoTitle, name:threeTitle, goal = "blah"} = moviess;
+

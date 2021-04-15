@@ -403,7 +403,14 @@
 // console.log("Hello")
 // console.log(..."Hello")
  
-const dogs = ['tyson', 'suzi']
-const cats = ['snow','haze']
+// const dogs = ['tyson', 'suzi']
+// const cats = ['snow','haze']
 
-const allPets = [...dogs, ...cats]
+// const allPets = [...dogs, ...cats]
+
+ const obj = {
+     ...[1,2,3,4],
+     ..."hiii"
+ }
+
+ const newObj = {...obj, new: "sdaf"}

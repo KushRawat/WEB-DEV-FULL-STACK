@@ -400,5 +400,10 @@
 //     return Math.floor(Math.random() * numSides) + 1
 // }
 
-console.log("Hello")
-console.log(..."Hello")
+// console.log("Hello")
+// console.log(..."Hello")
+ 
+const dogs = ['tyson', 'suzi']
+const cats = ['snow','haze']
+
+const allPets = [...dogs, ...cats]

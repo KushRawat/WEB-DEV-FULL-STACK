@@ -408,9 +408,13 @@
 
 // const allPets = [...dogs, ...cats]
 
- const obj = {
-     ...[1,2,3,4],
-     ..."hiii"
- }
+//  const obj = {
+//      ...[1,2,3,4],
+//      ..."hiii"
+//  }
 
- const newObj = {...obj, new: "sdaf"}
+//  const newObj = {...obj, new: "sdaf"}
+
+function sum() {
+    console.log(arguments)
+}

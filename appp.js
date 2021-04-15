@@ -379,12 +379,23 @@
 //     return n < 10 
 // })
 
-const prices = [12,245,234,6,56]
+// const prices = [12,245,234,6,56]
 
-const total = prices.reduce((total,price) => total + price)
-const minPrice = prices.reduce((min,price) => {
-    if (price < min) {
-        return price
+// const total = prices.reduce((total,price) => total + price)
+// const minPrice = prices.reduce((min,price) => {
+//     if (price < min) {
+//         return price
+//     }
+//     return min
+// })
+
+function rollDieOld(numSides) {
+    if (numSides === undefined) {
+        numSides = 6
     }
-    return min
-})
+    return Math.floor(Math.random() * numSides) + 1
+}
+
+function rollDie(numSides = 6) {
+    return Math.floor(Math.random() * numSides) + 1
+}

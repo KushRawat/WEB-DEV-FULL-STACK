@@ -419,12 +419,16 @@
 //     console.log(arguments)
 // }
 
-function sum(...nums) {
-    return nums.reduce((total, el) => total + el);
-}
+// function sum(...nums) {
+//     return nums.reduce((total, el) => total + el);
+// }
 
-function raceResults(gold, silver, ...everyoneElse) {
-    console.log(`Gold goes to ${gold}`)
-    console.log(`Silver goes to ${silver}`)
-    console.log(`And thanks to everyone else ${everyoneElse}`)
-}
+// function raceResults(gold, silver, ...everyoneElse) {
+//     console.log(`Gold goes to ${gold}`)
+//     console.log(`Silver goes to ${silver}`)
+//     console.log(`And thanks to everyone else ${everyoneElse}`)
+// }
+
+const raceResults = ['Love', 'Kush', 'Aman', 'Deepak'];
+
+const [gold, silver, ...everyoneElse] = raceResults;

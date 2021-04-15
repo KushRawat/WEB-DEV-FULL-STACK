@@ -433,6 +433,39 @@
 
 // const [gold, silver, ...everyoneElse] = raceResults;
 
+// const movies = [
+//     {
+//         title:'Amadeus',
+//         score: 99
+//     },
+//     {
+//         title:'Parasite',
+//         score: 85
+//     }
+// ]
+
+// const [one,two] = movies;
+
+// const moviess = {
+//         title:'Amadeus',
+//         score: 99,
+//         name:'Kush'
+//     }   
+
+// const {score,name,title}= moviess;
+
+// const {title:oneTitle, score:twoTitle, name:threeTitle, goal = "blah"} = moviess;
+
+const moviess = {
+        title:'Amadeus',
+        score: 99,
+        name:'Kush'
+    }  
+
+function comb({title, score}) {
+    return `${title} has ${score}!`
+}
+
 const movies = [
     {
         title:'Amadeus',
@@ -444,15 +477,4 @@ const movies = [
     }
 ]
 
-const [one,two] = movies;
-
-const moviess = {
-        title:'Amadeus',
-        score: 99,
-        name:'Kush'
-    }   
-
-const {score,name,title}= moviess;
-
-const {title:oneTitle, score:twoTitle, name:threeTitle, goal = "blah"} = moviess;
-
+movies.filter(({score}) => score > 80)

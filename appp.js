@@ -373,8 +373,18 @@
 //     console.log(Math.random())
 // }, 2000)  
 
-const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+// const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
 
-const result = numbers.filter(n => {
-    return n < 10 
+// const result = numbers.filter(n => {
+//     return n < 10 
+// })
+
+const prices = [12,245,234,6,56]
+
+const total = prices.reduce((total,price) => total + price)
+const minPrice = prices.reduce((min,price) => {
+    if (price < min) {
+        return price
+    }
+    return min
 })

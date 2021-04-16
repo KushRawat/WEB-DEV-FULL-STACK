@@ -10,3 +10,8 @@ btn.onmouseenter = function () {
 }
 
 document.querySelector('h1').onclick = () => alert('YOU CLICKED THE H1')
+
+btn3 = document.querySelector('#v3')
+btn3.addEventListener('click', function() {
+    alert("CLICKED!! ")
+})

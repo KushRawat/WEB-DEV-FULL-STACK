@@ -105,7 +105,13 @@ const fakeRequestPromise = (url) => {
 // () => {
 
 // })
-            // CALLBACK HELL PRACTICE
+
+
+
+
+
+
+                        // CALLBACK HELL PRACTICE
 // fakeRequestCallback('books.com/page1', 
 //     function(response) {
 //         console.log("IT WORKS!!")
@@ -131,24 +137,49 @@ const fakeRequestPromise = (url) => {
 //         console.log("ERROR!!!", err)
 //     })
 
+                        // PROMISE PRACTICE
+
+// fakeRequestPromise('yelp.com/api/coffee/page1')
+//     .then(() => {
+//         console.log("IT WORKED!!(1)")
+//         fakeRequestPromise('yelp.com/api/coffee/page2')
+//             .then(() => {
+//                 console.log("IT WORKED!!(2)")
+//                 fakeRequestPromise('yelp.com/api/coffee/page3')
+//                     .then(() => {
+//                         console.log("IT WORKED!!(3)")
+//                     })
+//                     .catch(() => {
+//                         console.log("OH NO, ERROR!(3)")
+//                     })
+//             })  
+//             .catch(() => {
+//                 console.log("OH NO,ERROR!!(2)")
+//             })
+//     })
+//     .catch(() => {
+//         console.log("OH NO,ERROR!!(1)")
+//     })
+
+
+                            // CLEAN PROMISE
+
 fakeRequestPromise('yelp.com/api/coffee/page1')
-    .then(() => {
-        console.log("IT WORKED!!(1)")
-        fakeRequestPromise('yelp.com/api/coffee/page2')
-            .then(() => {
-                console.log("IT WORKED!!(2)")
-                fakeRequestPromise('yelp.com/api/coffee/page3')
-                    .then(() => {
-                        console.log("IT WORKED!!(3)")
-                    })
-                    .catch(() => {
-                        console.log("OH NO, ERROR!(3)")
-                    })
-            })  
-            .catch(() => {
-                console.log("OH NO,ERROR!!(2)")
-            })
+    .then((data) => {
+        console.log("IT WORKED!! (page1)")
+        console.log(data)
+        return fakeRequestPromise('yelp.com/api/coffee/page2')
     })
-    .catch(() => {
-        console.log("OH NO,ERROR!!(1)")
+    .then((data) => {
+        console.log("IT WORKED!! (page2)")
+        console.log(data)
+        return fakeRequestPromise('yelp.com/api/coffee/page3')
+    })
+    .then((data) => {
+        console.log("IT WORKED!! (page3)")
+        console.log(data)
+    })
+    .catch((err) => {
+        console.log("OH NO, A REQUEST FAILED!!")
+        console.log(err)
     })

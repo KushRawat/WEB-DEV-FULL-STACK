@@ -194,15 +194,15 @@ const fakeRequest = (url) => {
             if (rand < 0.7) {
                 resolve('YOUR FAKE DATA HERE');
             }
-            reject('REQUEST ERROR');
+            reject('REQUEST ERROR!');
         }, 1000);
 
         })
 }
 
-fakeRequestPromise('/dogs/')
+fakeRequest('/dogs/')
     .then((data) => {
-        console.log("DONE WITH REQUEST")
+        console.log("DONE WITH REQUEST!")
         console.log('data is:',data)
     })
     .catch((err) => {

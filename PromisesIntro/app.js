@@ -200,14 +200,27 @@ const fakeRequest = (url) => {
         })
 }
 
-fakeRequest('/dogs/')
-    .then((data) => {
-        console.log("DONE WITH REQUEST!")
-        console.log('data is:',data)
-    })
-    .catch((err) => {
-        console.log('OH NO!', err)
-    })
+async function makeTwoRequests() {
+    try {
+        let data1 = await fakeRequest('/page1')
+        console.log(data1)
+        let data2 = await fakeRequest('/page2')
+        console.log(data2)
+    } catch (e) {
+        console.log("Caught an error")
+        console.log("error is:", e)
+    }
+}  
+makeTwoRequests()
+
+// fakeRequest('/dogs/')
+//     .then((data) => {
+//         console.log("DONE WITH REQUEST!")
+//         console.log('data is:',data)
+//     })
+//     .catch((err) => {
+//         console.log('OH NO!', err)
+//     })
 
                 // Delayed colour change from Async JS 
 
@@ -241,10 +254,16 @@ async function rainbow() {
     return "All Done"
 }
 
-// rainbow is resolved since the value has been returned, therefore .then keyword can be used
+// // rainbow is resolved since the value has been returned, therefore .then keyword can be used
 
-rainbow()
-    .then(() => {
-        console.log('End of Rainbow')
-    })
+// rainbow()
+//     .then(() => {
+//         console.log('End of Rainbow')
+//     })
 
+async function printRainbow() {
+    await rainbow();
+    console.log("END OF RAINBOW")
+}
+
+printRainbow()

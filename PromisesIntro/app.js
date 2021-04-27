@@ -220,11 +220,31 @@ const delayedColorChange = (color, delay) => {
     })
 }
 
-delayedColorChange('red', 1000)
-    .then(() => delayedColorChange('red', 1000))
-    .then(() => delayedColorChange('orange', 1000))
-    .then(() => delayedColorChange('yellow', 1000))
-    .then(() => delayedColorChange('green', 1000))
-    .then(() => delayedColorChange('blue', 1000))
-    .then(() => delayedColorChange('indigo', 1000))
-    .then(() => delayedColorChange('violet', 1000))
+// delayedColorChange('red', 1000)
+//     .then(() => delayedColorChange('red', 1000))
+//     .then(() => delayedColorChange('orange', 1000))
+//     .then(() => delayedColorChange('yellow', 1000))
+//     .then(() => delayedColorChange('green', 1000))
+//     .then(() => delayedColorChange('blue', 1000))
+//     .then(() => delayedColorChange('indigo', 1000))
+//     .then(() => delayedColorChange('violet', 1000))
+
+                    // Using await keyword from Async JS
+
+async function rainbow() {
+    await delayedColorChange('red', 1000)
+    await delayedColorChange('green', 1000)
+    await delayedColorChange('blue', 1000)
+    await delayedColorChange('yellow', 1000)
+    await delayedColorChange('violet', 1000)
+    await delayedColorChange('indigo', 1000)
+    return "All Done"
+}
+
+// rainbow is resolved since the value has been returned, therefore .then keyword can be used
+
+rainbow()
+    .then(() => {
+        console.log('End of Rainbow')
+    })
+

@@ -200,6 +200,8 @@ const fakeRequest = (url) => {
         })
 }
 
+                    // Handling rejected promises
+
 async function makeTwoRequests() {
     try {
         let data1 = await fakeRequest('/page1')

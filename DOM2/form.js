@@ -29,3 +29,10 @@ const h3 = document.querySelector('h3')
 input.addEventListener('input', function(e) {
     h3.innerText = input.value
 })
+
+
+                    // EVENT DELEGATION
+
+tweetsContainer.addEventListener('click', function(e) {
+    e.target.remove()
+})

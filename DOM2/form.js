@@ -34,5 +34,5 @@ input.addEventListener('input', function(e) {
                     // EVENT DELEGATION
 
 tweetsContainer.addEventListener('click', function(e) {
-    e.target.remove()
+    e.target.nodeName === 'LI' && e.target.remove()
 })

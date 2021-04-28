@@ -20,3 +20,12 @@ const addTweet = (username, tweet) => {
     newTweet.append(`- ${tweet}`)
     tweetsContainer.append(newTweet)    
 }
+
+                    // INPUT AND CHANGE EVENT
+
+const input = document.querySelector('#un')
+const h3 = document.querySelector('h3')
+
+input.addEventListener('input', function(e) {
+    h3.innerText = input.value
+})

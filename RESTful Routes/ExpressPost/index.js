@@ -25,9 +25,14 @@ const comments = [
         comment: 'woof woof woof'
     }
 ]
-
+            // READ COMMENTS   
 app.get('/comments', (req, res) => {
     res.render("comments/index", { comments })
+})
+
+            // NEW COMMENT
+app.get('/comments/new', (req, res) => {
+    res.render('comments/new')
 })
 
 app.get('/tacos', (req, res) => {

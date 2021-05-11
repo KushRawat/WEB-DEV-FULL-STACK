@@ -53,6 +53,15 @@ app.get('/comments/:id', (req, res) => {
     res.render('comments/show', { comment })
 })
 
+// UPDATE COMMENT
+app.patch('/comments/:id', (req, res) => {
+    const { id } = req.params
+    const updateComment = req.body.comment
+    const foundComment = comments.find(c => c.id === id)
+    foundComment.comment = updateComment
+    res.redirect('/comments')
+})
+
 app.get('/tacos', (req, res) => {
     res.send("GET /tacos response")
 })

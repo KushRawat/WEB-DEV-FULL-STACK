@@ -40,6 +40,7 @@ const productSchema = new mongoose.Schema({
     }
 })
 
+// INSTANCE METHODS
 productSchema.methods.greet = function () {
     console.log("HELLO!!! HI!! HOWDY!!!")
     console.log(`- from ${this.name}`)
@@ -55,6 +56,11 @@ productSchema.methods.addCategory = function (newCat) {
     return this.save()
 }
 
+// STATIC METHODS
+productSchema.statics.fireSale = function () {
+    return this.updateMany({}, { onSale: true, price: 0 })
+}
+
 const Product = mongoose.model('Product', productSchema)
 
 const findProduct = async () => {
@@ -66,7 +72,10 @@ const findProduct = async () => {
     console.log(foundProduct)
 }
 
-findProduct()
+Product.fireSale()
+    .then(res => console.log(res))
+
+// findProduct()
 
 // const bike = new Product({ name: 'Cycling Jersey', price: 2500, categories: ['Cycling'], size: 'XS' })
 

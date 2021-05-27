@@ -17,9 +17,9 @@
         <input type="number" name="price" id="price" placeholder="Product Price" value="<%=foundProduct.price%>">
         <label for="category">Select category</label>
         <select name="category" id="category">
-            <option value="fruit">Fruit</option>
-            <option value="vegetable">Vegetable</option>
-            <option value="dairy">Dairy</option>
+            <option value="fruit" <%=foundProduct.category === "fruit" ? 'selected': ''%> >Fruit</option>
+            <option value="vegetable" <%=foundProduct.category === "vegetable" ? 'selected': ''%>>Vegetable</option>
+            <option value="dairy" <%=foundProduct.category === "dairy" ? 'selected': ''%>>Dairy</option>
         </select>
         <button>Update Product</button>
     </form>

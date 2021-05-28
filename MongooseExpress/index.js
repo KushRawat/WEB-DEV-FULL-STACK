@@ -24,12 +24,12 @@ app.use(methodOverride('_method'))
 
 const categories = ['fruit', 'vegetable', 'dairy']
 
-// USING REST
+// USING REST & CRUD
 app.get('/products', async (req, res) => {
     const products = await Product.find({})
     res.render('products/index', { products })
 })
-
+// C
 app.get('/products/new', (req, res) => {
     res.render('products/new', { categories })
 })
@@ -39,14 +39,14 @@ app.post('/products', async (req, res) => {
     await newProduct.save()
     res.redirect(`/products/${newProduct._id}`)
 })
-
+// R
 app.get('/products/:id', async (req, res) => {
     const { id } = req.params
     const foundProduct = await Product.findById(id)
     console.log(foundProduct)
     res.render('products/show', { foundProduct })
 })
-
+// U
 app.get('/products/:id/edit', async (req, res) => {
     const { id } = req.params
     const foundProduct = await Product.findById(id)
@@ -57,6 +57,12 @@ app.put('/products/:id', async (req, res) => {
     const { id } = req.params
     const updateProduct = await Product.findByIdAndUpdate(id, req.body, { runValidators: true, new: true })
     res.redirect(`/products/${updateProduct._id}`)
+})
+// D
+app.delete('/products/:id', async (req, res) => {
+    const { id } = req.params
+    const deletedProduct = await Product.findByIdAndDelete(id)
+    res.redirect('/products')
 })
 
 app.listen(3000, () => {

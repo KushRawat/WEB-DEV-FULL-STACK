@@ -14,11 +14,21 @@
     <form action="/testing">
       <p>
         <label for="username">Enter a username:</label>
-        <input type="text" placeholder="Username" name="username" id="username" />
+        <input
+          type="text"
+          placeholder="Username"
+          name="username"
+          id="username"
+        />
       </p>
       <p>
         <label for="password">Enter a password:</label>
-        <input type="password" placeholder="Password" name="password" id="password" />
+        <input
+          type="password"
+          placeholder="Password"
+          name="password"
+          id="password"
+        />
       </p>
       <p>
         <label for="color">Pick a color:</label>
@@ -41,5 +51,28 @@
       <button type="reset">Reset</button>
       <button type="menu">Menu</button>
     </form>
+    <hr>
+    <h2>Search Reddit</h2>
+    <p>
+      <form action="https://www.reddit.com/search">
+        <input type="text" name="q" id="q" />
+        <button type="submit">Reddit Search</button>
+      </form>
+    </p>
+    <p>
+      <h2>Search Google</h2>
+      <form action="https://www.google.com/search">
+        <input type="text" name="q" id="q">
+        <button type="submit">Google Search</button>
+      </form>
+    </p>
+    <h2>Search Youtube</h2>
+    <p>
+      <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" id="">
+        <button>Youtube Search</button>
+      </form>
+
+    </p>
   </body>
-</html>
+  </html>

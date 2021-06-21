@@ -36,7 +36,15 @@
       </p>
       <p>
         <label for="number">Enter a number:</label>
-        <input type="number" placeholder="Enter a number" name="" id="number" />
+        <input
+          type="number"
+          step="10"
+          min="100"
+          max="1000"
+          placeholder="Enter a number"
+          name=""
+          id="number"
+        />
       </p>
       <p>
         <label for="time">Enter time</label>
@@ -101,6 +109,18 @@
           <option selected value="steak">Steak</option>
           <option value="veg">Veg</option>
         </select>
+      </p>
+      <p>
+        <label for="cheese">Amount of cheese</label>
+        <input
+          type="range"
+          name="cheese"
+          id="cheese"
+          value="10"
+          min="0"
+          max="100"
+          step="10"
+        />
       </p>
       <button>Submit</button>
     </form>

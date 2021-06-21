@@ -51,28 +51,58 @@
       <button type="reset">Reset</button>
       <button type="menu">Menu</button>
     </form>
-    <hr>
-    <h2>Search Reddit</h2>
-    <p>
-      <form action="https://www.reddit.com/search">
-        <input type="text" name="q" id="q" />
-        <button type="submit">Reddit Search</button>
-      </form>
-    </p>
-    <p>
-      <h2>Search Google</h2>
-      <form action="https://www.google.com/search">
-        <input type="text" name="q" id="q">
-        <button type="submit">Google Search</button>
-      </form>
-    </p>
-    <h2>Search Youtube</h2>
-    <p>
-      <form action="https://www.youtube.com/results">
-        <input type="text" name="search_query" id="">
-        <button>Youtube Search</button>
-      </form>
 
-    </p>
+    <br />
+    <hr />
+
+    <h2>Search Reddit</h2>
+    <form action="https://www.reddit.com/search">
+      <input type="text" name="q" id="q" />
+      <button type="submit">Reddit Search</button>
+    </form>
+    <h2>Search Google</h2>
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" id="q" />
+      <button type="submit">Google Search</button>
+    </form>
+    <h2>Search Youtube</h2>
+
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" id="" />
+      <button>Youtube Search</button>
+    </form>
+
+    <br />
+    <hr />
+
+    <h2>More inputs!</h2>
+    <form action="/birds">
+      <h3>CHECKBOX</h3>
+      <p>
+        <input type="checkbox" name="agree_tos" id="agree" checked />
+        <label for="agree">I agree to everything</label>
+        <!-- <button>Submit</button> -->
+      </p>
+      <h3>RADIO BUTTONS</h3>
+      <p>
+        <label for="xs">XS</label>
+        <input type="radio" name="size" id="xs" value="xs" />
+        <label for="s">S</label>
+        <input type="radio" name="size" id="s" value="s" />
+        <label for="m">M</label>
+        <input type="radio" name="size" id="m" value="m" />
+      </p>
+      <h3>SELECT</h3>
+      <p>
+        <label for="meal">Please select a meal type</label>
+        <select name="meal" id="meal">
+          <option value="">--Please choose an option--</option>
+          <option value="fish">Fish</option>
+          <option selected value="steak">Steak</option>
+          <option value="veg">Veg</option>
+        </select>
+      </p>
+      <button>Submit</button>
+    </form>
   </body>
-  </html>
+</html>

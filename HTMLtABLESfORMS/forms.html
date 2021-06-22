@@ -135,5 +135,25 @@
       </p>
       <button>Submit</button>
     </form>
+
+    <h2>Validations</h2>
+    <form action="/dummy">
+      <label for="first">Enter First Name</label>
+      <input type="text" name="first" id="first" required />
+      <label for="username">Username</label>
+      <input
+        minlength="5"
+        maxlength="10"
+        type="text"
+        name="username"
+        id="username"
+        required
+      />
+      <p>
+        <!-- <input type="email" name="" id=""  required/> -->
+        <input type="url" name="" id="" required>
+      </p>
+      <button>Submit</button>
+    </form>
   </body>
 </html>

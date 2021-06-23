@@ -60,11 +60,6 @@ a[href*="google"] {
   color: #023047;
 }
 
-.post button:hover {
-  background-color: #9d0208;
-  color: aliceblue;
-}
-
 a:hover {
   text-decoration: black underline;
   /* color: black; */
@@ -78,17 +73,26 @@ a:hover {
   background-color: darkblue;
 }
 .post:nth-of-type(3n) {
-  background-color:darkorange;
+  background-color: darkorange;
 }
 
 h2::first-letter {
   font-size: 50px;
 }
 
-p::first-line{
+p::first-line {
   color: purple;
 }
 
-p::selection{
+p::selection {
   background-color: yellow;
+}
+
+.post button:hover {
+  background-color: #9d0208;
+  color: aliceblue;
+}
+button:hover {
+  background-color: olive;
+  /* font-size: 10px; */
 }

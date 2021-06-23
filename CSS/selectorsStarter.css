@@ -33,6 +33,7 @@ span {
 
 .post a {
   color: chartreuse;
+  text-decoration: none;
 }
 
 footer a {
@@ -48,13 +49,34 @@ footer > a {
 }
 
 input[type="password"] {
-  color:red
+  color: red;
 }
 
-section[class="post"] {
+/* section[class="post"] {
   background-color: red;
-}
+} */
 
 a[href*="google"] {
   color: #023047;
+}
+
+.post button:hover {
+  background-color: #9d0208;
+  color: aliceblue;
+}
+
+a:hover {
+  text-decoration: black underline;
+  /* color: black; */
+}
+
+.post button:active {
+  background-color: black;
+}
+
+.post:nth-of-type(2) {
+  background-color: darkblue;
+}
+.post:nth-of-type(3n) {
+  background-color:darkorange;
 }

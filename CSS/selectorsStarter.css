@@ -1,0 +1,60 @@
+/* * {
+    font-family: monospace;
+} */
+
+body {
+  background-color: rgb(239, 238, 247);
+}
+
+button {
+  font-size: 20px;
+  background-color: rgb(90, 187, 194);
+}
+
+h1,
+h2 {
+  color: darkslateblue;
+}
+
+#signUp {
+  background-color: forestgreen;
+  color: blanchedalmond;
+}
+
+span {
+  color: chartreuse;
+}
+
+.span {
+  background-color: deeppink;
+  color: deepskyblue;
+  font-size: 16px;
+}
+
+.post a {
+  color: chartreuse;
+}
+
+footer a {
+  color: crimson;
+}
+
+h2 + button {
+  font-size: 30px;
+}
+
+footer > a {
+  color: #023047;
+}
+
+input[type="password"] {
+  color:red
+}
+
+section[class="post"] {
+  background-color: red;
+}
+
+a[href*="google"] {
+  color: #023047;
+}

@@ -1,4 +1,8 @@
-section {
+html {
+  font-size: 15px;
+}
+
+/* section {
   background-color: #023e8a;
   width: 600px;
   height: 600px;
@@ -42,4 +46,18 @@ p {
 
 ul {
   font-size: 0.7em;
+} */
+
+#rems h2 {
+  font-size: 3rem;
+}
+#rems h3 {
+  font-size: 2rem;
+}
+#rems ul {
+  font-size: 1rem;
+}
+
+#rems button {
+  font-size:2rem
 }

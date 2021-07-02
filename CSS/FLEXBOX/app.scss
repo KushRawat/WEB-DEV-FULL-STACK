@@ -1,0 +1,41 @@
+$font: "Open Sans", sans-serif;
+$align: center;
+
+%starter {
+  background-color: #003049;
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid #003049;
+}
+
+body {
+  font-family: $font;
+  h1 {
+    text-align: $align;
+  }
+  section#container {
+    @extend %starter;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    div {
+      width: 200px;
+      height: 200px;
+      text-align: center;
+    }
+    div:nth-of-type(3){
+        align-self:center;
+    }
+    // align-content: space-between;
+    // flex-wrap: wrap-reverse;
+    // flex-wrap: nowrap;
+    // flex-direction: column-reverse;
+    // justify-content: flex-start;
+    // justify-content: space-between;
+    // justify-content: space-evenly;
+    // justify-content: center;
+  }
+}

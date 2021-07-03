@@ -1,9 +1,14 @@
 body section#container {
   background-color: #003049;
   width: 90%;
-  height: 500px;
   margin: 0 auto;
   border: 5px solid #003049;
+}
+
+body section#container div {
+  width: 200px;
+  height: 200px;
+  text-align: center;
 }
 
 body {
@@ -28,19 +33,26 @@ body section#container {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 body section#container div {
-  width: 200px;
-  height: 200px;
-  text-align: center;
+  -ms-flex-preferred-size: 600px;
+      flex-basis: 600px;
 }
 
-body section#container div:nth-of-type(3) {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+body section#container div:nth-of-type(1) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+body section#container div:nth-last-of-type(1) {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 /*# sourceMappingURL=app.css.map */

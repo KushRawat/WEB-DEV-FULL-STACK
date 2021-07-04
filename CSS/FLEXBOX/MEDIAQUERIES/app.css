@@ -1,0 +1,20 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+body nav {
+  font-size: 1.5em;
+}
+
+body nav ul,
+body nav li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+body h1 {
+  font-size: 6em;
+  text-align: center;
+}
+/*# sourceMappingURL=app.css.map */

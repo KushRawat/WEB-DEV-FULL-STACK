@@ -12,5 +12,49 @@ body {
   h1 {
     font-size: 6em;
     text-align: center;
+    color: red;
   }
 }
+// h1 {
+//     color: red;
+// }
+
+@media (min-width: 500px) {
+  h1 {
+    color: orange;
+  }
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    color: green;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: magenta;
+  }
+}
+// @media (min-width: 600px) and (max-width: 700px) {
+//   h1 {
+//     color: purple;
+//   }
+
+// @media (max-width: 1500px) {
+//   h1 {
+//     color: yellow;
+//   }
+// }
+
+// @media (max-width: 1000px) {
+//   h1 {
+//     color: red;
+//   }
+// }
+
+// @media (max-width: 500px) {
+//   h1 {
+//     color: orange;
+//   }
+// }

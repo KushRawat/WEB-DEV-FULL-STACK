@@ -16,5 +16,24 @@ body nav li {
 body h1 {
   font-size: 6em;
   text-align: center;
+  color: red;
+}
+
+@media (min-width: 500px) {
+  h1 {
+    color: orange;
+  }
+}
+
+@media (min-width: 1000px) {
+  h1 {
+    color: green;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    background-color: magenta;
+  }
 }
 /*# sourceMappingURL=app.css.map */

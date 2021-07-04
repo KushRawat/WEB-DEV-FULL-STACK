@@ -11,6 +11,16 @@ body section#container div {
   text-align: center;
 }
 
+body main {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -54,5 +64,19 @@ body section#container div:nth-last-of-type(1) {
           flex-grow: 2;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+body main section.sidebar {
+  background-color: #6930c3;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 2 300px;
+          flex: 1 2 300px;
+}
+
+body main section.maincontent {
+  background-color: #80ffdb;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 400px;
+          flex: 2 1 400px;
 }
 /*# sourceMappingURL=app.css.map */

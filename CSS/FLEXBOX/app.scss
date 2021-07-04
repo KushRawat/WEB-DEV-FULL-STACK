@@ -15,6 +15,14 @@ $align: center;
   text-align: center;
 }
 
+%starterMain {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  border: 5px solid black;
+  display: flex;
+}
+
 body {
   font-family: $font;
   h1 {
@@ -40,6 +48,19 @@ body {
     div:nth-last-of-type(1) {
       flex-grow: 2;
       flex-shrink: 0;
+    }
+  }
+
+  main {
+    @extend %starterMain;
+    section.sidebar {
+      background-color: #6930c3;
+      // border: 2px solid white;
+      flex: 1 2 300px;
+    }
+    section.maincontent{
+      background-color: #80ffdb;
+      flex: 2 1 400px;
     }
   }
 }

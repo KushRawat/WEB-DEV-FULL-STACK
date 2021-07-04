@@ -2,40 +2,78 @@ body {
   font-family: "Open Sans", sans-serif;
   nav {
     font-size: 1.5em;
-    ul,
-    li {
+    display: flex;
+    justify-content: space-between;
+    ul {
       display: inline;
       margin: 0;
       padding: 0;
+    //   border: 1px solid red;
+      flex: 1;
+      max-width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        display: inline;
+        margin: 0;
+        padding: 0;
+      }
     }
   }
+}
+
+h1 {
+  font-size: 6em;
+  text-align: center;
+  color: red;
+}
+
+@media (max-width: 786px) {
   h1 {
-    font-size: 6em;
-    text-align: center;
-    color: red;
+    color: green;
+    font-size: 4em;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 586px) {
+  h1 {
+    color: blue;
+    font-size: 2em;
   }
 }
 // h1 {
-//     color: red;
+//   color: red;
+//   font-size: 6em;
 // }
 
-@media (min-width: 500px) {
-  h1 {
-    color: orange;
-  }
-}
+// @media (min-width: 500px) {
+//     h1 {
+//         color: orange;
+//         font-size: 2em;
+//     }
+// }
 
-@media (min-width: 1000px) {
-  h1 {
-    color: green;
-  }
-}
+// @media (min-width: 1000px) {
+//   h1 {
+//     color: green;
+//     font-size: 2em;
+//   }
+// }
 
-@media (orientation: landscape) {
-  body {
-    background-color: magenta;
-  }
-}
+// @media (orientation: landscape) {
+//   body {
+//     background-color: magenta;
+//   }
+// }
+
 // @media (min-width: 600px) and (max-width: 700px) {
 //   h1 {
 //     color: purple;
